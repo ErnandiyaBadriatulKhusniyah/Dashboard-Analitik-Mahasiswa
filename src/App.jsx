@@ -1,11 +1,12 @@
-import { Route, useLocation } from 'react-router'
+import { Route, useLocation, Routes } from 'react-router'
 import './assets/css/main.css'
+import Login from './page/Login';
 
 function App() {
   const location = useLocation();
   return (
-    <Routes location={location}>
-      <Route path='/login' element={<Login to="/" />} />
+    <Routes key={location.pathname} location={location}>
+      <Route path='/login' element={<Login />} />
     </Routes>
   )
 }
