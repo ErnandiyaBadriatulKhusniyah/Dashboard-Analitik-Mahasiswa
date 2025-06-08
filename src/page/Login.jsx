@@ -82,8 +82,8 @@ const Login = () => {
 
     return (
         <main className="max-h-screen h-screen w-full grid grid-cols-2">
-            <div className="flex flex-col items-center justify-center p-8">
-                <h2 className="text-3xl font-bold mb-6">Login Akun Anda</h2>
+            <div className="flex flex-col items-center justify-center p-8 gap-12">
+                <img src="icon/LoginIcon.webp" alt="icon-login" />
                 <form onSubmit={handleSubmit} className="w-full max-w-sm">
                     <div className="mb-4">
                         <Input
