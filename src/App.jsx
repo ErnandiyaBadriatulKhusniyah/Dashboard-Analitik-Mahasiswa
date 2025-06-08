@@ -2,6 +2,7 @@ import { Route, useLocation, Routes } from 'react-router'
 import './assets/css/main.css'
 import Login from './page/Login';
 import Mahasiswa from './page/Mahasiswa';
+import Dashboard from './page/Dashboard';
 
 function App() {
   const location = useLocation();
@@ -9,6 +10,7 @@ function App() {
     <Routes key={location.pathname} location={location}>
       <Route path='/login' element={<Login />} />
       <Route path='/mahasiswa' element={<Mahasiswa />} />
+      <Route path='/dashboard' element={<Dashboard />} />
     </Routes>
   )
 }
