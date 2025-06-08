@@ -28,7 +28,7 @@ const matakuliah = [
         total_mahasiswa: 10
     },
 
-]; 
+];
 const data = {
     labels: matakuliah.map(item => item.mk),
     datasets: [{
@@ -67,7 +67,7 @@ const Dashboard = () => {
     return (
         <main className="h-screen w-full">
             <Layout className="flex flex-col gap-10 ">
-                <HeaderDashboard />
+                <HeaderDashboard children={"Dashboard"} />
                 <section className="bg-white rounded-lg py-4 px-10 space-y-5">
                     <Typography variantClass="h1" className="font-bold text-center text-2xl">Top Matakuliah Pilihan Mahasiswa</Typography>
                     <div className="grid grid-cols-[50%_50%] justify-center">
