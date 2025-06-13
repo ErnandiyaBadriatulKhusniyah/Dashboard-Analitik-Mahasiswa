@@ -70,7 +70,7 @@ const Dashboard = () => {
                 <HeaderDashboard children={"Dashboard"} />
                 <section className="bg-white rounded-lg py-4 px-10 space-y-5">
                     <Typography variantClass="h1" className="font-bold text-center text-2xl">Top Matakuliah Pilihan Mahasiswa</Typography>
-                    <div className="grid grid-cols-[50%_50%] justify-center">
+                     <div className="grid grid-cols-[50%_50%] justify-center">
                         <div className="">
                             <Doughnut options={options} className="max-h-[300px] max-w-fit" data={data} />
                         </div>
