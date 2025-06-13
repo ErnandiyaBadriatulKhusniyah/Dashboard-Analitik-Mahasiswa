@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "../components/atoms/Input"
+import Icon from "../assets/icon/Prodi.png";
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -83,7 +84,7 @@ const Login = () => {
     return (
         <main className="max-h-screen h-screen w-full grid grid-cols-2">
             <div className="flex flex-col items-center justify-center p-8 gap-12">
-                <img src="icon/LoginIcon.webp" alt="icon-login" />
+                <img src={Icon} alt="icon-login" className="h-30 w-35" />
                 <form onSubmit={handleSubmit} className="w-full max-w-sm">
                     <div className="mb-4">
                         <Input
@@ -132,4 +133,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Login;
