@@ -1,0 +1,72 @@
+### Variables
+@baseUrl = http://localhost:5000
+
+### Register New User
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+    "nama": "John Doe",
+    "email": "Jabbar@example.com",
+    "password": "password123",
+    "NIP": "12391233",
+    "peran": "dosen"
+}
+
+### Login User
+# @name login
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+    "NIP": "12391233",
+    "password": "password123"
+}
+
+### Logout User
+POST {{baseUrl}}/logout
+
+### Get All Mahasiswa (Protected Route)
+GET {{baseUrl}}/mahasiswa
+
+### Add New Mahasiswa (Protected Route)
+POST {{baseUrl}}/mahasiswa
+Content-Type: application/json
+
+{
+    "NIM": "123456",
+    "nama": "Jane Doe",
+    "angkatan": "2023",
+    "dosen_wali_id": 1,
+    "status_studi": "Aktif",
+    "semester": 1
+}
+
+### Add Rekomendasi Akademik (Protected Route)
+POST {{baseUrl}}/mahasiswa/1/rekomendasi
+Content-Type: application/json
+
+{
+    "dosen_wali_id": 1,
+    "semester": 1,
+    "isi_rekomendasi": "Mahasiswa perlu meningkatkan nilai mata kuliah algoritma"
+}
+
+### Get Rekomendasi Akademik (Protected Route)
+GET {{baseUrl}}/mahasiswa/1/rekomendasi
+
+### Add Kurikulum Mata Kuliah
+POST {{baseUrl}}/kurikulum
+Content-Type: application/json
+
+{
+    "kode_mk": "IF101",
+    "nama_mk": "Algoritma dan Pemrograman",
+    "sifat": "Wajib",
+    "sks": 3,
+    "kode_mk_prasyarat": null,
+    "semester": 1
+}
+
+### Get All Kurikulum
+GET {{baseUrl}}/kurikulum

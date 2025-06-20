@@ -1,0 +1,11 @@
+flask
+flask_sqlalchemy
+pymysql
+cryptography
+SQLAlchemy
+bcrypt
+pyjwt
+flask_cors
+psycopg2-binary
+flask_migrate 
+python-dotenv
