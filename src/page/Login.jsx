@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Input from "../components/atoms/Input"
-import Icon from "../assets/icon/Prodi.png";
+import Icon from "../assets/icon/Prodi.svg";
 
 const Login = () => {
     const [formData, setFormData] = useState({
