@@ -2,11 +2,10 @@
 import HeaderDashboard from "../components/molecules/HeaderDashboard";
 import Layout from "../components/templates/Layout";
 import CardMahasiswa from "../components/molecules/CardMahasiswa";
-import IconUser from "../assets/icon/IconUsers.png"
+import IconUser from "../assets/icon/IconUsers.svg";
+
 
 const Mahasiswa = () => {
-
-
     return (
         <main className="h-screen w-full">
             <Layout>
@@ -19,20 +18,17 @@ const Mahasiswa = () => {
                             jumlah="85"
                             label="Mahasiswa Aktif"
                             to="/mahasiswaAktif"
-                            
                         />
                         <CardMahasiswa
                             icon={IconUser}
                             jumlah="20"
                             label="Mahasiswa Non Aktif"
                             to="/MahasiswaNonAktif"
-                            
                         />
                         <CardMahasiswa
                             icon={IconUser}
                             jumlah="105"
                             label="Jumlah Mahasiswa"
-                            
                         />
                     </div>
 
