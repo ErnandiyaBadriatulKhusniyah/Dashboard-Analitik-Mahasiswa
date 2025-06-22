@@ -1,7 +1,7 @@
 import { Route, useLocation, Routes, Navigate } from 'react-router'
 import './assets/css/main.css'
 import MahasiswaNonAktif from './pages/MahasiswaNonAktif';
-import MahasiswaAktif from './page/MahasiswaAktif';
+import MahasiswaAktif from './pages/MahasiswaAktif';
 import InputDanEvaluasi from './pages/InputDanEvaluasi';
 import Statistik from './pages/Statistik';
 import Login from './pages/Login';
