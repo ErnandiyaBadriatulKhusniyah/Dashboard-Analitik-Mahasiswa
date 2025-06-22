@@ -1,11 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
 
-import IconSI from "../../assets/icon/Prodi.png";
 import { House } from 'lucide-react';
 import { GraduationCap } from 'lucide-react';
 import { FileCheck } from 'lucide-react';
 import { ChartNoAxesColumn } from 'lucide-react';
 import { LogOut } from 'lucide-react';
+import IconSI from '../../assets/icon/Prodi.svg';
 
 const Sidebar = () => {
 
