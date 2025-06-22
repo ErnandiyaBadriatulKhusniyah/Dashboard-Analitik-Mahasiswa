@@ -69,16 +69,9 @@ const Dashboard = () => {
         <main className="h-screen w-full">
             <Layout className="flex flex-col gap-10 ">
                 <HeaderDashboard children={"Dashboard"} />
-<<<<<<< HEAD:src/page/Dashboard.jsx
-                <section className="bg-white rounded-lg py-4 px-10 space-y-5">
-                    <Typography variantClass="h1" className="font-bold text-center text-2xl">Top Matakuliah Pilihan Mahasiswa</Typography>
-                     <div className="grid grid-cols-[50%_50%] justify-center">
-                        <div className="">
-=======
                 <section className=" space-y-5">
                     <div className="justify-center grid grid-cols-[50%_50%] space-x-5">
                         <div className="bg-white rounded-lg py-4 px-10">
->>>>>>> 065d2e40513a86f4af7422bb9b685c3f93bd2708:src/pages/Dashboard.jsx
                             <Doughnut options={options} className="max-h-[300px] max-w-fit" data={data} />
                         </div>
                         <div className="flex flex-col gap-2 bg-white rounded-lg py-4 px-10">
