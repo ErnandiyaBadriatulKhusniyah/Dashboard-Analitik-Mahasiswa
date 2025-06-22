@@ -1,18 +1,12 @@
 import { Route, useLocation, Routes, Navigate } from 'react-router'
 import './assets/css/main.css'
-<<<<<<< HEAD
-import Login from './page/Login';
-import Mahasiswa from './page/Mahasiswa';
-import Dashboard from './page/Dashboard';
-import MahasiswaNonAktif from './page/MahasiswaNonAktif';
+import MahasiswaNonAktif from './pages/MahasiswaNonAktif';
 import MahasiswaAktif from './page/MahasiswaAktif';
-import InputDanEvaluasi from './page/InputDanEvaluasi';
-import Statistik from './page/Statistik';
-=======
+import InputDanEvaluasi from './pages/InputDanEvaluasi';
+import Statistik from './pages/Statistik';
 import Login from './pages/Login';
 import Mahasiswa from './pages/Mahasiswa';
 import Dashboard from './pages/Dashboard';
->>>>>>> 065d2e40513a86f4af7422bb9b685c3f93bd2708
 
 function App() {
   const location = useLocation();
